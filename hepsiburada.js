@@ -1,7 +1,6 @@
 // 02.11.23   indirimli fiyat olmayanarda çalışmıyor
 
 var product = {};
-((document.querySelector("#originalPrice") || {}).textContent || "").trim() || "";
 product.name = ((document.querySelector(".product-name") || {}).textContent || "").trim();
 product.price = ((document.querySelector(".price-new") || {}).textContent || "").replace(/\n/g, '').trim().replaceAll(" " , "") || ((document.querySelector("#originalPrice") || {}).textContent || "").trim() || "";
 product.oldPrice = ((document.querySelector("#originalPrice") || {}).textContent || "").trim() || "";
