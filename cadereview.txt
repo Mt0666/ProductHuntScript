@@ -1,3 +1,4 @@
 .textContent ten önce obje kaçışı
 .textContent ten sonra string kaçışı
 .getAttribute ten sonra string kaçışı
+
