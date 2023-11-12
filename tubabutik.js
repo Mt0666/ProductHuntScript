@@ -2,7 +2,7 @@
 
 var product = {};
 
-product.name = (document.querySelector(".ProductName h1").textContent).replace(/\n/g, '')
+product.name = ((document.querySelector(".ProductName h1") || {}).textContent || "").replace(/\n/g, '')
 product.oldPrice = (document.querySelector("#fiyat .spanFiyat") || {}).textContent || "" || (document.querySelector("#indirimliFiyat .spanFiyat") || {}).textContent || "";
 product.price = (document.querySelector("#indirimliFiyat .spanFiyat") || {}).textContent || "";
  // product.brand = 
